@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link src="index.html" rel="stylesheet" href="index.css" />
+    <title>Helios</title>
+    <link rel="icon" href="img/logoHelios.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="desktop">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="video/fundo.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+
+      <a class="logo" href="#">
+        <span>Helios</span>
+        <img src="img/logoHelios.png" alt="Logo Helios" class="logo-icon" />
+      </a>
+
+      <div class="cta">
+        <button type="button" class="open-login" id="openLogin">
+          Já sou aluno
+        </button>
+        <a href="planos.html" class="btn btn-pill">Planos</a>
+      </div>
+    </main>
+
+    <div class="login-modal-overlay" id="loginModal">
+      <section class="login-modal">
+        <button
+          type="button"
+          class="close-login"
+          id="closeLogin"
+          aria-label="Fechar login"
+        >
+          &times;
+        </button>
+
+        <a class="logo logo-modal" href="#">
+          <span>Helios</span>
+          <img src="img/logoHelios.png" alt="Logo Helios" class="logo-icon" />
+        </a>
+
+        <div class="login-content">
+          <h1>Bem-vindo de volta.</h1>
+          <p class="login-sub">Acesse sua conta pra continuar</p>
+
+          <form id="loginForm">
+            <input
+              type="email"
+              placeholder="Digite seu e-mail"
+              autocomplete="email"
+              required
+            />
+
+            <div class="password-field">
+              <input
+                type="password"
+                id="loginPassword"
+                placeholder="Digite sua senha"
+                autocomplete="current-password"
+                required
+              />
+
+              <button
+                type="button"
+                id="togglePassword"
+                aria-label="Mostrar senha"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+
+            <a href="#" class="register-link">Cadastre-se aqui.</a>
+
+            <button type="submit" class="btn btn-block">Entrar</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

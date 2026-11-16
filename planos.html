@@ -1,0 +1,368 @@
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Planos - Helios</title>
+
+    <link rel="stylesheet" href="planos.css" />
+    <link rel="icon" href="img/logoHelios.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="overlay"></div>
+    </div>
+
+    <header class="header">
+      <a href="index.html" class="logo">
+        <span>Helios</span>
+        <img src="img/logoHelios.png" alt="Logo Helios" />
+      </a>
+
+      <nav class="navigation">
+        <a href="#" class="login">Entrar</a>
+        <a href="#" class="register">Cadastrar</a>
+      </nav>
+    </header>
+
+    <main class="plans-container">
+      <section class="plans">
+
+        <!-- PLANO BASIC -->
+
+        <article class="plan-card">
+          <h2>
+            <strong>PLANO</strong>
+            <span>BASIC</span>
+          </h2>
+
+          <ul class="benefits">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Check-in ilimitado na unidade</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-person-running"></i>
+              <span>Treinos especiais no Helios Basic App</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-dumbbell"></i>
+              <span>Desafios fitness no Helios Basic Club</span>
+            </li>
+          </ul>
+
+          <div class="plan-bottom">
+            <p class="price">A partir de <strong>R$ 90,00</strong></p>
+
+            <a href="#checkout" class="choose-plan">
+              ESCOLHER PLANO BASIC
+            </a>
+          </div>
+        </article>
+
+        <!-- PLANO FIT -->
+
+        <article class="plan-card">
+          <h2>
+            <strong>PLANO</strong>
+            <span>FIT</span>
+          </h2>
+
+          <ul class="benefits">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Check-in ilimitado na unidade</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-person-running"></i>
+              <span>Treinos especiais no Helios Basic App</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-dumbbell"></i>
+              <span>Desafios fitness no Helios Basic Club</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-star"></i>
+              <span>Treino Personalizável</span>
+            </li>
+          </ul>
+
+          <div class="plan-bottom">
+            <p class="price">A partir de <strong>R$ 119,90</strong></p>
+
+            <a href="#checkout" class="choose-plan">
+              ESCOLHER PLANO FIT
+            </a>
+          </div>
+        </article>
+
+        <!-- PLANO BLACK -->
+
+        <article class="plan-card plan-black">
+          <h2>
+            <strong>PLANO</strong>
+            <span>BLACK</span>
+          </h2>
+
+          <ul class="benefits">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Check-in ilimitado na unidade</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-person-running"></i>
+              <span>Treinos especiais no Helios Basic App</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-dumbbell"></i>
+              <span>Desafios fitness no Helios Basic Club</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-star"></i>
+              <span>Treino Personalizável</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-users"></i>
+              <span>Acesso a Todas as Unidades Helios</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-user-group"></i>
+              <span>5 acessos mensais pra convidar amigos, 1 por visita</span>
+            </li>
+
+            <li>
+              <i class="fa-solid fa-glass-water"></i>
+              <span>Day Shake</span>
+            </li>
+          </ul>
+
+          <div class="plan-bottom">
+            <p class="price">A partir de <strong>R$ 159,90</strong></p>
+
+            <a href="#checkout" class="choose-plan">
+              ESCOLHER PLANO BLACK
+            </a>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <!-- POPUP DE PAGAMENTO -->
+
+    <section class="checkout" id="checkout">
+
+      <div class="checkout-left">
+
+        <a href="planos.html" class="checkout-close">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+
+        <a href="index.html" class="checkout-logo">
+          <span>Helios</span>
+          <img src="img/logoHelios.png" alt="Logo Helios" />
+        </a>
+
+        <form class="checkout-form">
+
+          <h3>Qual seu endereço de cobrança?</h3>
+
+          <div class="address-fields">
+
+            <div class="field full">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" />
+            </div>
+
+            <div class="field">
+              <label for="estado">Estado</label>
+              <input type="text" id="estado" />
+            </div>
+
+            <div class="field">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" />
+            </div>
+
+            <div class="field full">
+              <label for="bairro">Bairro</label>
+              <input type="text" id="bairro" />
+            </div>
+
+            <div class="field full">
+              <label for="rua">Rua</label>
+              <input type="text" id="rua" />
+            </div>
+
+            <div class="field">
+              <label for="numero">Número</label>
+              <input type="text" id="numero" />
+            </div>
+
+            <div class="field">
+              <label for="complemento">Complemento (opcional)</label>
+              <input type="text" id="complemento" />
+            </div>
+
+          </div>
+
+          <h3 class="payment-title">
+            Qual sua forma de pagamento?
+          </h3>
+
+          <p class="security">
+            <i class="fa-solid fa-lock"></i>
+            Compra 100% segura
+          </p>
+
+          <div class="payment-options">
+
+            <label class="payment-option">
+              <input
+                type="radio"
+                name="payment"
+                value="credito"
+                checked
+              />
+
+              <span>
+                <strong>Cartão de Crédito</strong>
+
+                <span class="brands">
+                  <i class="fa-brands fa-cc-visa"></i>
+                  <i class="fa-brands fa-cc-mastercard"></i>
+                  <i class="fa-brands fa-cc-amex"></i>
+                </span>
+              </span>
+            </label>
+
+            <label class="payment-option">
+              <input
+                type="radio"
+                name="payment"
+                value="debito"
+              />
+
+              <span>
+                <strong>Cartão de Débito</strong>
+
+                <span class="brands">
+                  <i class="fa-brands fa-cc-visa"></i>
+                  <i class="fa-brands fa-cc-mastercard"></i>
+                </span>
+              </span>
+            </label>
+
+          </div>
+
+          <div class="card-fields">
+
+            <div class="field full">
+              <label for="nome-cartao">Nome no cartão</label>
+              <input
+                type="text"
+                id="nome-cartao"
+                placeholder="Nome como está no cartão"
+              />
+            </div>
+
+            <div class="field full">
+              <label for="numero-cartao">Número do cartão</label>
+              <input
+                type="text"
+                id="numero-cartao"
+                placeholder="0000 0000 0000 0000"
+              />
+            </div>
+
+            <div class="field">
+              <label for="validade">Validade</label>
+              <input
+                type="text"
+                id="validade"
+                placeholder="MM/AA"
+              />
+            </div>
+
+            <div class="field">
+              <label for="cvv">CVV</label>
+              <input
+                type="text"
+                id="cvv"
+                placeholder="CVV"
+              />
+            </div>
+
+          </div>
+
+          <button type="button" class="finish-payment">
+            Finalizar compra
+          </button>
+
+        </form>
+      </div>
+
+      <!-- RESUMO DA COMPRA -->
+
+      <aside class="checkout-right">
+
+        <h3>Detalhes da compra</h3>
+
+        <div class="address-summary">
+          <strong>Alameda Santos</strong>
+
+          <small>
+            Alameda Santos, 1347 - São Paulo, São Paulo
+          </small>
+        </div>
+
+        <div class="purchase-summary">
+
+          <div class="selected-plan">
+            Plano selecionado
+          </div>
+
+          <div class="summary-line">
+            <strong>1ª Mensalidade</strong>
+            <span>R$ 0,00</span>
+          </div>
+
+          <div class="summary-line">
+            <strong>Mensalidades Restantes</strong>
+            <span>Valor do plano/mês</span>
+          </div>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+  </body>
+</html>

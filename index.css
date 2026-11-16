@@ -1,0 +1,386 @@
+/* CONFIGURAÇÕES GERAIS */
+
+:root {
+  --amber: #ffb400;
+  --orange: #f5a623;
+  --texto-suave: #b8b8b8;
+  --fonte-titulo: "Marcellus", serif;
+  --fonte-texto: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #0c0c0c;
+  font-family: var(--fonte-texto);
+}
+
+/* TELA INICIAL */
+
+.desktop {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  overflow: hidden;
+  background: #101820;
+}
+
+/* VÍDEO DE FUNDO */
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* SOBREPOSIÇÃO DO VÍDEO */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 12, 20, 0.75) 0%,
+    rgba(5, 12, 20, 0.35) 55%,
+    rgba(5, 12, 20, 0.55) 100%
+  );
+}
+
+/* LOGO */
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 6%;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #ffffff;
+  font-family: var(--fonte-titulo);
+  font-size: 36px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.logo-icon {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+/* PAINEL LATERAL E BOTÕES */
+
+.cta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  min-width: 300px;
+  height: 100vh;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+
+  background: rgba(8, 28, 45, 0.4);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.open-login,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fonte-titulo);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* BOTÃO JÁ SOU ALUNO */
+
+.open-login {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px 16px;
+}
+
+.open-login:hover {
+  color: var(--amber);
+}
+
+/* BOTÃO PLANOS */
+
+.btn-pill {
+  width: 170px;
+  height: 48px;
+  border: none;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #111111;
+  font-size: 18px;
+}
+
+.btn-pill:hover {
+  background: var(--amber);
+  transform: translateY(-2px);
+}
+
+/* TELA DE LOGIN */
+
+.login-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+
+  display: none;
+  align-items: stretch;
+  justify-content: flex-end;
+
+  padding: 0;
+  background: transparent;
+}
+
+.login-modal-overlay.active {
+  display: flex;
+}
+
+.login-modal {
+  position: relative;
+
+  width: 30%;
+  min-width: 300px;
+  max-width: none;
+
+  height: 100vh;
+  min-height: 100vh;
+
+  padding: 28px 5.5%;
+
+  border: 0;
+  border-radius: 0;
+  background: #202020;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* BOTÃO FECHAR */
+
+.close-login {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* LOGO DO LOGIN */
+
+.logo-modal {
+  position: static;
+  font-size: 32px;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.logo-modal .logo-icon {
+  width: 65px;
+  height: auto;
+}
+
+/* CONTEÚDO */
+
+.login-content {
+  width: 100%;
+  margin-top: 42px;
+}
+
+.login-content h1 {
+  color: var(--amber);
+  font-family: var(--fonte-titulo);
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.login-sub {
+  color: var(--texto-suave);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+/* FORMULÁRIO */
+
+.login-content form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-content input {
+  width: 100%;
+  height: 36px;
+  padding: 0 14px;
+
+  border: 1px solid #858585;
+  border-radius: 30px;
+
+  outline: none;
+  background: transparent;
+  color: #fff;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+.login-content input::placeholder {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.login-content input:focus {
+  border-color: var(--amber);
+}
+
+/* CAMPOS PREENCHIDOS */
+
+.login-content input:-webkit-autofill,
+.login-content input:-webkit-autofill:hover,
+.login-content input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0 1000px #202020 inset;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+/* SENHA */
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input {
+  padding-right: 36px;
+}
+
+.password-field button {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+
+  border: 0;
+  background: transparent;
+  color: #aaa;
+
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* CADASTRO */
+
+.register-link {
+  color: var(--amber);
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+/* BOTÃO ENTRAR */
+
+.login-content .btn-block {
+  width: 100%;
+  height: 38px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: var(--amber);
+  color: #111;
+
+  font-family: var(--fonte-texto);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-content .btn-block:hover {
+  background: #ffffff;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .logo {
+    top: 25px;
+    left: 5%;
+    font-size: 28px;
+  }
+
+  .logo-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .cta {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    padding: 36px 20px;
+    gap: 24px;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .login-modal {
+    width: 100%;
+    min-width: 0;
+    padding: 28px 10%;
+  }
+
+  .login-content h1 {
+    white-space: normal;
+  }
+}

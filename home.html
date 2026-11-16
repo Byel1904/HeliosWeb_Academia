@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helios - Minha Rotina</title>
+    <link rel="icon" href="img/logoHelios.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="inicio.css" />
+  </head>
+
+  <body>
+    <header class="topbar"></header>
+
+    <aside class="sidebar">
+      <a href="index.html" class="logo">
+        <span>Helios</span>
+        <img src="img/logoHelios.png" alt="Logo Helios" />
+      </a>
+
+      <nav>
+        <button class="nav-item">
+          <i></i>
+          <span>Inicio</span>
+        </button>
+
+        <button class="nav-item active">
+          <i></i>
+          <span>Minha Rotina</span>
+        </button>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1 class="page-title">
+        MINHA ROTINA<br />
+        DE <span>TREINO</span> <i class="fa-solid fa-dumbbell"></i>
+      </h1>
+
+      <nav class="day-tabs" id="dayTabs">
+        <button class="day-tab active" data-day="seg">SEG</button>
+        <button class="day-tab" data-day="ter">TER</button>
+        <button class="day-tab" data-day="qua">QUA</button>
+        <button class="day-tab" data-day="qui">QUI</button>
+        <button class="day-tab" data-day="sex">SEX</button>
+      </nav>
+
+      <section class="routine">
+        <div class="routine-header" id="dayTitle">Segunda-feira</div>
+
+        <div class="routine-body">
+          <div id="exerciseList"></div>
+
+          <button class="btn-outline" id="btnAdd">+ Adicionar Exercício.</button>
+        </div>
+      </section>
+
+      <section class="shake-wrap">
+        <div class="shake-card" id="shakeCard">
+          <div class="shake-head">
+            <span class="ico"><i class="fa-solid fa-bottle-water"></i></span>
+            <div>
+              <h3>Day Shake</h3>
+              <p>Seu beneficio exclusivo</p>
+            </div>
+          </div>
+
+          <button class="btn-outline full" id="btnShake">Gerar Codigo</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL ADICIONAR EXERCÍCIO -->
+    <div class="overlay" id="modalPick">
+      <div class="modal">
+        <div class="modal-title" id="pickTitle">Adicionar exercício</div>
+
+        <div class="seg">
+          <button class="active" data-tab="lib">Exercícios</button>
+          <button data-tab="custom">Personalizado</button>
+        </div>
+
+        <div id="pickBody"></div>
+      </div>
+    </div>
+
+    <!-- MODAL CONFIGURAR EXERCÍCIO -->
+    <div class="overlay" id="modalConfig">
+      <div class="modal">
+        <div class="modal-title">
+          <button class="back" id="cfgBack">←</button>
+          Configurar Exercício
+        </div>
+
+        <div class="ex-head">
+          <div class="ico"><i class="fa-solid fa-dumbbell"></i></div>
+          <strong id="cfgName">Exercício</strong>
+        </div>
+
+        <div class="field">
+          <label>Séries</label>
+          <div class="stepper" data-key="series" data-min="1" data-max="10" data-step="1">
+            <button class="minus">−</button>
+            <span class="val">3</span>
+            <button class="plus">+</button>
+          </div>
+
+          <label>Repetições</label>
+          <div class="stepper" data-key="reps" data-min="1" data-max="100" data-step="1">
+            <button class="minus">−</button>
+            <span class="val">12</span>
+            <button class="plus">+</button>
+          </div>
+
+          <label>Carga (opcional)</label>
+          <div class="stepper" data-key="load" data-min="0" data-max="500" data-step="2.5">
+            <button class="minus">−</button>
+            <span class="val">0<small>kg</small></span>
+            <button class="plus">+</button>
+          </div>
+
+          <label>Observações (opcional)</label>
+          <textarea
+            id="cfgNotes"
+            placeholder="Ex.: foco na contração, descanso de 1 min..."
+          ></textarea>
+        </div>
+
+        <div class="rest">
+          <div class="rest-title">⏱ Descanso entre as séries</div>
+          <div class="stepper" data-key="rest" data-min="0" data-max="600" data-step="15">
+            <button class="minus">−</button>
+            <div class="mid">
+              <b class="val">60</b>
+              <small>segundos</small>
+            </div>
+            <button class="plus">+</button>
+          </div>
+        </div>
+
+        <button class="btn-save" id="cfgSave">Salvar</button>
+      </div>
+    </div>
+
+    <!-- MODAL DAY SHAKE -->
+    <div class="overlay" id="modalShake">
+      <div class="modal shake">
+        <div class="qr-row">
+          <canvas id="qrCanvas" width="110" height="110"></canvas>
+
+          <div class="qr-info">
+            <h4>Código Ativo!</h4>
+            <p>Use no caixa da academia.</p>
+
+            <div class="timer-box" id="activeTimer">30:00</div>
+            <small>Expira em 30 minutos</small>
+          </div>
+        </div>
+
+        <button class="btn-outline" id="shakeClose">Fechar</button>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>
