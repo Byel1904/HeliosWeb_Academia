@@ -1,5 +1,3 @@
-/* CONFIGURAÇÕES GERAIS */
-
 :root {
   --amber: #ffb400;
   --orange: #f5a623;
@@ -22,8 +20,6 @@ body {
   font-family: var(--fonte-texto);
 }
 
-/* TELA INICIAL */
-
 .desktop {
   position: relative;
   width: 100%;
@@ -32,8 +28,6 @@ body {
   overflow: hidden;
   background: #101820;
 }
-
-/* VÍDEO DE FUNDO */
 
 .bg-video {
   position: absolute;
@@ -45,7 +39,6 @@ body {
   z-index: 0;
 }
 
-/* SOBREPOSIÇÃO DO VÍDEO */
 
 .overlay {
   position: absolute;
@@ -59,8 +52,6 @@ body {
     rgba(5, 12, 20, 0.55) 100%
   );
 }
-
-/* LOGO */
 
 .logo {
   position: absolute;
@@ -86,7 +77,6 @@ body {
   object-fit: contain;
 }
 
-/* PAINEL LATERAL E BOTÕES */
 
 .cta {
   position: absolute;
@@ -120,8 +110,6 @@ body {
   transition: 0.3s ease;
 }
 
-/* BOTÃO JÁ SOU ALUNO */
-
 .open-login {
   background: transparent;
   border: none;
@@ -134,7 +122,6 @@ body {
   color: var(--amber);
 }
 
-/* BOTÃO PLANOS */
 
 .btn-pill {
   width: 170px;
@@ -151,7 +138,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* TELA DE LOGIN */
 
 .login-modal-overlay {
   position: fixed;
@@ -192,7 +178,6 @@ body {
   justify-content: flex-start;
 }
 
-/* BOTÃO FECHAR */
 
 .close-login {
   position: absolute;
@@ -205,7 +190,6 @@ body {
   cursor: pointer;
 }
 
-/* LOGO DO LOGIN */
 
 .logo-modal {
   position: static;
@@ -219,7 +203,6 @@ body {
   height: auto;
 }
 
-/* CONTEÚDO */
 
 .login-content {
   width: 100%;
@@ -244,7 +227,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* FORMULÁRIO */
 
 .login-content form {
   width: 100%;
@@ -278,7 +260,6 @@ body {
   border-color: var(--amber);
 }
 
-/* CAMPOS PREENCHIDOS */
 
 .login-content input:-webkit-autofill,
 .login-content input:-webkit-autofill:hover,
@@ -288,7 +269,6 @@ body {
   transition: background-color 9999s ease-in-out 0s;
 }
 
-/* SENHA */
 
 .password-field {
   position: relative;
@@ -313,7 +293,7 @@ body {
   cursor: pointer;
 }
 
-/* CADASTRO */
+
 
 .register-link {
   color: var(--amber);
@@ -323,7 +303,6 @@ body {
   margin-top: 0;
 }
 
-/* BOTÃO ENTRAR */
 
 .login-content .btn-block {
   width: 100%;
@@ -346,7 +325,6 @@ body {
   background: #ffffff;
 }
 
-/* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
   .logo {
