@@ -149,11 +149,13 @@ body {
 
 .plan-card h2 strong {
     font-weight: 700;
+    color: white;
 }
 
 .plan-card h2 span {
     color: var(--amber);
     font-weight: 400;
+
 }
 
 .plan-black {
@@ -534,3 +536,101 @@ body {
   }
 }
 
+.register-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.register-overlay.active {
+  display: flex;
+}
+
+.register-modal {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  padding: 32px 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #202020;
+  border-radius: 12px;
+}
+
+.register-modal h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  color: var(--amber);
+  font-family: var(--font-text);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.register-modal input {
+  height: 38px;
+  padding: 0 14px;
+  border: 1px solid #858585;
+  border-radius: 30px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.register-modal input:focus {
+  border-color: var(--amber);
+}
+
+.register-close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  color: #aaa;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.register-error {
+  min-height: 14px;
+  color: #ff6b6b;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+
+.register-submit {
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: var(--amber);
+  color: #111;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.register-submit:hover {
+  background: #fff;
+}
+
+.register-login {
+  text-align: center;
+  color: #b8b8b8;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+.register-login a {
+  color: var(--amber);
+}

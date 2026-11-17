@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-BR">
   <head>
@@ -36,8 +35,8 @@
       </a>
 
       <nav class="navigation">
-        <a href="#" class="login">Entrar</a>
-        <a href="#" class="register">Cadastrar</a>
+        <a href="index.html?login=1" class="login">Entrar</a>
+        <a href="#" class="register" id="openRegister">Cadastrar</a>
       </nav>
     </header>
 
@@ -69,9 +68,7 @@
           <div class="plan-bottom">
             <p class="price">A partir de <strong>R$ 90,00</strong></p>
 
-            <a href="#checkout" class="choose-plan">
-              ESCOLHER PLANO BASIC
-            </a>
+            <a href="#checkout" class="choose-plan"> ESCOLHER PLANO BASIC </a>
           </div>
         </article>
 
@@ -106,12 +103,9 @@
           <div class="plan-bottom">
             <p class="price">A partir de <strong>R$ 119,90</strong></p>
 
-            <a href="#checkout" class="choose-plan">
-              ESCOLHER PLANO FIT
-            </a>
+            <a href="#checkout" class="choose-plan"> ESCOLHER PLANO FIT </a>
           </div>
         </article>
-
 
         <article class="plan-card plan-black">
           <h2>
@@ -159,19 +153,14 @@
           <div class="plan-bottom">
             <p class="price">A partir de <strong>R$ 159,90</strong></p>
 
-            <a href="#checkout" class="choose-plan">
-              ESCOLHER PLANO BLACK
-            </a>
+            <a href="#checkout" class="choose-plan"> ESCOLHER PLANO BLACK </a>
           </div>
         </article>
-
       </section>
     </main>
 
     <section class="checkout" id="checkout">
-
       <div class="checkout-left">
-
         <a href="planos.html" class="checkout-close">
           <i class="fa-solid fa-xmark"></i>
         </a>
@@ -182,11 +171,9 @@
         </a>
 
         <form class="checkout-form">
-
           <h3>Qual seu endereço de cobrança?</h3>
 
           <div class="address-fields">
-
             <div class="field full">
               <label for="cep">CEP</label>
               <input type="text" id="cep" />
@@ -221,12 +208,9 @@
               <label for="complemento">Complemento (opcional)</label>
               <input type="text" id="complemento" />
             </div>
-
           </div>
 
-          <h3 class="payment-title">
-            Qual sua forma de pagamento?
-          </h3>
+          <h3 class="payment-title">Qual sua forma de pagamento?</h3>
 
           <p class="security">
             <i class="fa-solid fa-lock"></i>
@@ -234,14 +218,8 @@
           </p>
 
           <div class="payment-options">
-
             <label class="payment-option">
-              <input
-                type="radio"
-                name="payment"
-                value="credito"
-                checked
-              />
+              <input type="radio" name="payment" value="credito" checked />
 
               <span>
                 <strong>Cartão de Crédito</strong>
@@ -255,11 +233,7 @@
             </label>
 
             <label class="payment-option">
-              <input
-                type="radio"
-                name="payment"
-                value="debito"
-              />
+              <input type="radio" name="payment" value="debito" />
 
               <span>
                 <strong>Cartão de Débito</strong>
@@ -270,11 +244,9 @@
                 </span>
               </span>
             </label>
-
           </div>
 
           <div class="card-fields">
-
             <div class="field full">
               <label for="nome-cartao">Nome no cartão</label>
               <input
@@ -295,49 +267,30 @@
 
             <div class="field">
               <label for="validade">Validade</label>
-              <input
-                type="text"
-                id="validade"
-                placeholder="MM/AA"
-              />
+              <input type="text" id="validade" placeholder="MM/AA" />
             </div>
 
             <div class="field">
               <label for="cvv">CVV</label>
-              <input
-                type="text"
-                id="cvv"
-                placeholder="CVV"
-              />
+              <input type="text" id="cvv" placeholder="CVV" />
             </div>
-
           </div>
 
-          <button type="button" class="finish-payment">
-            Finalizar compra
-          </button>
-
+          <button type="button" class="finish-payment">Finalizar compra</button>
         </form>
       </div>
 
-
       <aside class="checkout-right">
-
         <h3>Detalhes da compra</h3>
 
         <div class="address-summary">
           <strong>Alameda Santos</strong>
 
-          <small>
-            Alameda Santos, 1347 - São Paulo, São Paulo
-          </small>
+          <small> Alameda Santos, 1347 - São Paulo, São Paulo </small>
         </div>
 
         <div class="purchase-summary">
-
-          <div class="selected-plan">
-            Plano selecionado
-          </div>
+          <div class="selected-plan">Plano selecionado</div>
 
           <div class="summary-line">
             <strong>1ª Mensalidade</strong>
@@ -348,12 +301,62 @@
             <strong>Mensalidades Restantes</strong>
             <span>Valor do plano/mês</span>
           </div>
-
         </div>
-
       </aside>
-
     </section>
 
+    <div class="register-overlay" id="registerModal">
+      <form class="register-modal" id="registerForm" novalidate>
+        <button
+          type="button"
+          class="register-close"
+          id="closeRegister"
+          aria-label="Fechar"
+        >
+          &times;
+        </button>
+
+        <h2>Crie sua conta</h2>
+
+        <input
+          type="text"
+          id="regNome"
+          placeholder="Nome completo"
+          autocomplete="name"
+          required
+        />
+        <input
+          type="email"
+          id="regEmail"
+          placeholder="E-mail"
+          autocomplete="email"
+          required
+        />
+        <input
+          type="password"
+          id="regSenha"
+          placeholder="Senha (mín. 6 caracteres)"
+          autocomplete="new-password"
+          required
+        />
+        <input
+          type="password"
+          id="regSenha2"
+          placeholder="Confirmar senha"
+          autocomplete="new-password"
+          required
+        />
+
+        <p class="register-error" id="registerError"></p>
+
+        <button type="submit" class="register-submit">Cadastrar</button>
+
+        <p class="register-login">
+          Já tem conta? <a href="index.html?login=1">Entrar</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="../js/planos.js"></script>
   </body>
 </html>
