@@ -1,13 +1,18 @@
+
 <!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="../style/index.css" />
+
     <title>Helios</title>
     <link rel="icon" href="../img/logoHelios.png" type="image/png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
       rel="stylesheet"
@@ -18,11 +23,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
+
   <body>
     <main class="desktop">
       <video class="bg-video" autoplay muted loop playsinline>
         <source src="../video/fundo.mp4" type="video/mp4" />
       </video>
+
       <div class="overlay"></div>
 
       <a class="logo" href="#">
@@ -34,6 +41,7 @@
         <button type="button" class="open-login" id="openLogin">
           Já sou aluno
         </button>
+
         <a href="planos.html" class="btn btn-pill">Planos</a>
       </div>
     </main>
@@ -61,6 +69,7 @@
           <form id="loginForm">
             <input
               type="email"
+              id="loginEmail"
               placeholder="Digite seu e-mail"
               autocomplete="email"
               required
@@ -86,11 +95,18 @@
 
             <a href="#" class="register-link">Cadastre-se aqui.</a>
 
+            <p
+              id="msgErro"
+              style="display: none; color: #ff6b6b; margin: 0;"
+            ></p>
+
             <button type="submit" class="btn btn-block">Entrar</button>
           </form>
         </div>
       </section>
     </div>
+
+    <script src="../js/login.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>
