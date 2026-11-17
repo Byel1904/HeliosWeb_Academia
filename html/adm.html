@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helios ADM</title>
+    <link rel="icon" href="img/LogoHelios.png" type="image/png">
+    <link rel="stylesheet" href="/adm.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Helios ADM</h1>
+    </header>
+
+    <div class="container">
+
+        <nav>
+            <button class="nav-painel">
+                <i></i>
+                <span>Painel</span>
+            </button>
+
+            <button class="nav-item">
+                <i></i>
+                <span>Alunos</span>
+            </button>
+
+            <button class="nav-item">
+                <i></i>
+                <span>Matrículas</span>
+            </button>
+
+            <button class="nav-item">
+                <i></i>
+                <span>Funcionário</span>
+            </button>
+
+            <button class="nav-item">
+                <i></i>
+                <span>Configurações</span>
+            </button>
+        </nav>
+
+        <main>
+
+            <section class="card-indicadores">
+
+                <h3>Painel do Gestor</h3>
+
+                <div class="indicadores-container">
+
+                    <div class="indicador">
+                        <p>Alunos ativos</p>
+                        <strong>182</strong>
+                    </div>
+
+                    <div class="indicador">
+                        <p>Receita mensal</p>
+                        <strong>R$ 24.300</strong>
+                    </div>
+
+                    <div class="indicador">
+                        <p>Novas matrículas</p>
+                        <strong>14</strong>
+                    </div>
+
+                    <div class="indicador">
+                        <p>Taxas de evasão</p>
+                        <strong>3.2%</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="card-grafico">
+
+                <h3>Gráfico de Receita</h3>
+
+                <div class="grafico-container">
+
+                    <svg viewBox="0 0 640 140" preserveAspectRatio="none">
+
+                        <path d="
+                            M 0 90
+                            C 5 65, 12 12, 20 35
+                            C 35 55, 55 90, 75 112
+                            C 85 125, 115 65, 145 48
+                            C 160 38, 175 100, 200 132
+                            C 215 155, 235 85, 255 65
+                            C 270 45, 310 120, 335 130
+                            C 355 140, 365 120, 385 90
+                            C 400 68, 420 50, 440 38
+                            C 450 30, 470 75, 485 95
+                            C 495 110, 505 75, 530 30
+                            C 545 0, 545 0, 555 35
+                            C 570 75, 585 95, 595 100
+                            C 605 110, 615 45, 640 15
+                        "/>
+
+                    </svg>
+
+                </div>
+
+            </section>
+
+            <section class="card alunos">
+
+                <h3>Últimos Alunos Cadastrados</h3>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Plano</th>
+                            <th>Status</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Ana Souza</td>
+                            <td>Plano Fit</td>
+                            <td>
+                                <span class="status ativo">Ativo</span>
+                            </td>
+                            <td>12/06</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bruno Lima</td>
+                            <td>Plano Black</td>
+                            <td>
+                                <span class="status ativo">Ativo</span>
+                            </td>
+                            <td>10/06</td>
+                        </tr>
+
+                        <tr>
+                            <td>Julia Mendes</td>
+                            <td>Plano Black</td>
+                            <td>
+                                <span class="status pendente">Pendente</span>
+                            </td>
+                            <td>09/06</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pedro Tavares</td>
+                            <td>Plano Basic</td>
+                            <td>
+                                <span class="status inativo">Inativo</span>
+                            </td>
+                            <td>03/06</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
