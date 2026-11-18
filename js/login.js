@@ -23,3 +23,5 @@ if (form && inputUsuario && inputSenha) {
     }
   });
 }
+
+// Aqui ele esta validando o login, caso nao seja vailido, block
