@@ -578,3 +578,273 @@ nav button:hover {
     text-align: center;
 }
 
+
+.funcionarios-titulo {
+    background: #1e2d3d;
+    padding: 17px 24px;
+    border-radius: 9px;
+    width: 100%;
+}
+
+.funcionarios-titulo h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #e5e7eb;
+}
+
+.funcionarios-filtros {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 3px;
+}
+
+.funcionarios-filtros input {
+    width: 203px;
+    height: 35px;
+    padding: 0 11px;
+    background: #1e2d3d;
+    border: 1px solid #aeb5bd;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    font-size: 11px;
+}
+
+.funcionarios-filtros select {
+    height: 35px;
+    min-width: 65px;
+    padding: 0 10px;
+    background: #0d1b2a;
+    border: 1px solid #aeb5bd;
+    border-radius: 5px;
+    color: #e5e7eb;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.card-funcionarios {
+    background: #1e2d3d;
+    border-radius: 9px;
+    padding: 12px 20px 20px;
+    width: 100%;
+}
+
+.tabela-funcionarios {
+    width: 100%;
+    border-collapse: collapse;
+    color: #e5e7eb;
+    font-size: 11px;
+    text-align: center;
+}
+
+.tabela-funcionarios th {
+    color: #8b929b;
+    font-weight: bold;
+    padding: 5px 5px 10px;
+    border-bottom: 1px solid #aeb5bd;
+}
+
+.tabela-funcionarios td {
+    padding: 8px 5px;
+    border-bottom: 1px solid #aeb5bd;
+}
+
+.tabela-funcionarios tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.telefone-funcionario {
+    color: #858e99;
+}
+
+.status-funcionario {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.status-funcionario.ativo {
+    background: #75f02c;
+    color: #17320a;
+}
+
+.status-funcionario.ferias {
+    background: #e5e5e5;
+    color: #333;
+}
+
+.acoes-funcionario {
+    cursor: pointer;
+    color: #aeb5bd;
+}
+
+
+.configuracoes-header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #e5e7eb;
+    margin-bottom: 18px;
+}
+
+.configuracoes-abas {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.aba-configuracao {
+    width: 139px;
+    height: 33px;
+    border: 1px solid #aeb5bd;
+    border-radius: 5px;
+    background: #1e2d3d;
+    color: #858e99;
+    font-size: 11px;
+    text-align: left;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.aba-configuracao.ativa {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.card-configuracoes {
+    background: #1e2d3d;
+    border-radius: 9px;
+    padding: 20px 36px;
+    width: 100%;
+}
+
+.conteudo-configuracao {
+    max-width: 470px;
+}
+
+.conteudo-configuracao h3 {
+    color: #e5e7eb;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.campos-configuracao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 12px;
+    padding: 0 2px;
+}
+
+.campo-configuracao {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo-configuracao label {
+    color: #e5e7eb;
+    font-size: 11px;
+}
+
+.campo-configuracao input {
+    width: 184px;
+    height: 33px;
+    background: transparent;
+    border: 1px solid #c2c8cf;
+    border-radius: 5px;
+    padding: 0 9px;
+    color: white;
+    outline: none;
+}
+
+.campo-largo {
+    grid-column: span 2;
+}
+
+.campo-largo input {
+    width: 466px;
+}
+
+.titulo-regras {
+    margin-top: 20px;
+    margin-bottom: 22px !important;
+}
+
+.campos-regras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 0 2px;
+}
+
+.campos-regras .campo-configuracao label {
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.campos-regras .campo-configuracao input {
+    width: 184px;
+}
+
+.botoes-configuracao {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 23px;
+    padding-left: 2px;
+}
+
+.btn-cancelar-configuracao,
+.btn-salvar-configuracao {
+    height: 33px;
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    color: white;
+    padding: 0 12px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.btn-cancelar-configuracao {
+    width: 78px;
+}
+
+.btn-salvar-configuracao {
+    width: 109px;
+}
+
+@media (max-width: 700px) {
+    .card-configuracoes {
+        padding: 20px;
+    }
+
+    .campos-configuracao,
+    .campos-regras {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-largo {
+        grid-column: span 1;
+    }
+
+    .campo-configuracao input,
+    .campo-largo input,
+    .campos-regras .campo-configuracao input {
+        width: 100%;
+    }
+
+    .campos-regras .campo-configuracao label {
+        white-space: normal;
+    }
+
+    .configuracoes-abas {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+}

@@ -27,13 +27,11 @@ const inputPlano = document.getElementById('aluno-plano');
 
 cardsPlano.forEach(card => {
     card.addEventListener('click', () => {
-        // Remove a seleção de todos
+
         cardsPlano.forEach(c => c.classList.remove('selecionado'));
         
-        // Adiciona no clicado
         card.classList.add('selecionado');
         
-        // Preenche o input de Plano
         if (inputPlano) {
             inputPlano.value = card.getAttribute('data-plano');
         }
