@@ -1,6 +1,8 @@
  <div align="center">
 
-<img src="img/logoHelios" width="190" alt="Logo Helios">
+<img src="https://raw.githubusercontent.com/Byel1904/HeliosWeb_Academia/main/img/logoHelios.png"
+         width="220"
+         alt="Helios">
 
 # HELIOS
 
