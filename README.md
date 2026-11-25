@@ -1,69 +1,105 @@
-# 🏋️ Helios — Plataforma Web de Academia
+ <div align="center">
 
-<div align="center">
+<img src="img/logoHelios" width="190" alt="Logo Helios">
 
-![Helios](https://img.shields.io/badge/HELIOS-Fitness%20Platform-orange?style=for-the-badge)
+# HELIOS
 
-**Uma experiência digital para o gerenciamento e a personalização de atividades físicas.**
+### FITNESS • PERFORMANCE • EVOLUTION
 
-Projeto acadêmico desenvolvido no SENAC.
+**Transforme sua rotina. Supere seus limites.**
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 </div>
 
 ---
 
-## 📌 Sobre o Projeto
+## ☀️ Sobre a Helios
 
-A **Helios** é um projeto acadêmico que consiste no desenvolvimento de uma plataforma web para uma academia fictícia, criada com o objetivo de aplicar conhecimentos de desenvolvimento web e explorar soluções digitais para o ambiente fitness.
+A **Helios** é uma plataforma web desenvolvida para representar uma academia moderna, combinando tecnologia, funcionalidade e uma experiência digital intuitiva.
 
-A proposta é oferecer uma interface moderna, intuitiva e organizada, permitindo que alunos e administradores tenham acesso a diferentes funcionalidades dentro da plataforma.
+O projeto apresenta uma proposta de ambiente fitness digital, com áreas destinadas aos alunos e administradores, buscando facilitar a organização e o gerenciamento das atividades da academia.
 
-O projeto foi desenvolvido como parte das atividades educacionais do SENAC, com foco na prática de programação, estruturação de interfaces e desenvolvimento de funcionalidades.
-
-> **Importante:** A Helios não é uma academia real. Trata-se de uma marca fictícia criada exclusivamente para fins educacionais.
+Com uma identidade visual própria, a Helios busca unir design, praticidade e inovação em uma única plataforma.
 
 ## ✨ Funcionalidades
 
-- **Sistema de Login:** Acesso às áreas da plataforma conforme o perfil do usuário.
-- **Painel Administrativo:** Interface destinada ao gerenciamento das informações da academia.
-- **Área do Aluno:** Ambiente para visualização e organização das informações pessoais.
-- **Planos de Academia:** Apresentação dos diferentes planos e benefícios disponíveis.
-- **Organização de Treinos:** Interface para acompanhamento e personalização da rotina de atividades.
-- **Calendário de Atividades:** Organização dos dias de treino durante a semana.
-- **Interface Responsiva:** Desenvolvimento de uma experiência visual organizada e intuitiva.
+### 🏋️ Área do Aluno
+- Sistema de acesso por login.
+- Visualização de planos e benefícios.
+- Organização da rotina semanal de treinos.
+- Personalização da experiência de treinamento.
+- Navegação pela área do aluno.
 
-## 💻 Tecnologias Utilizadas
+### ⚙️ Área Administrativa
+- Acesso exclusivo para administração.
+- Painel administrativo.
+- Interface de gerenciamento.
+- Navegação entre as áreas do sistema.
 
-| Tecnologia | Aplicação |
+### 🎯 Experiência Visual
+- Identidade visual própria.
+- Interface moderna.
+- Organização dos elementos e informações.
+- Navegação intuitiva.
+
+## 🖥️ Preview
+
+<div align="center">
+
+<!-- Insira aqui os prints reais das telas da Helios -->
+
+**Página Inicial**
+
+<img src="CAMINHO-DO-PRINT-INICIAL.png" width="90%" alt="Página inicial da Helios">
+
+**Área do Aluno**
+
+<img src="CAMINHO-DO-PRINT-ALUNO.png" width="90%" alt="Área do aluno">
+
+**Painel Administrativo**
+
+<img src="CAMINHO-DO-PRINT-ADMINISTRATIVO.png" width="90%" alt="Painel administrativo">
+
+</div>
+
+## 🛠️ Tecnologias
+
+| Tecnologia | Descrição |
 |---|---|
 | HTML5 | Estruturação das páginas |
 | CSS3 | Estilização e identidade visual |
 | JavaScript | Interatividade e funcionalidades |
 
-## 🎨 Interface
+## 📁 Estrutura do Projeto
 
-A identidade visual da Helios foi pensada para transmitir modernidade, tecnologia e dinamismo, utilizando uma interface limpa e elementos visuais inspirados no universo fitness.
+```text
+HeliosWeb_Academia/
+│
+├── html/       # Páginas HTML
+├── img/        # Imagens e elementos visuais
+├── js/         # Scripts JavaScript
+├── style/      # Arquivos CSS
+├── video/      # Recursos de vídeo
+│
+└── README.md   # Documentação do projeto
+```
 
-## 🎯 Objetivo Acadêmico
+## 🚀 Acesse o Projeto
 
-O principal objetivo deste projeto é colocar em prática os conhecimentos adquiridos durante a formação no SENAC, desenvolvendo uma aplicação web que simula o funcionamento de uma plataforma de gerenciamento de academia.
+<div align="center">
 
-Durante o desenvolvimento, são trabalhados conceitos como:
+[![GitHub Repository](https://img.shields.io/badge/ACESSAR_REPOSITÓRIO-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Byel1904/HeliosWeb_Academia)
 
-- Estruturação semântica com HTML.
-- Estilização e organização de layouts com CSS.
-- Manipulação do DOM com JavaScript.
-- Lógica de programação.
-- Desenvolvimento de interfaces e navegação.
-- Organização e versionamento de código com Git e GitHub.
-
-## 🚀 Acesso ao Projeto
-
-**Repositório:** [HeliosWeb_Academia](https://github.com/Byel1904/HeliosWeb_Academia)
+</div>
 
 ## 👨‍💻 Desenvolvedor
 
-Desenvolvido por **Gabryel Silva**, como parte de um projeto acadêmico no SENAC.
+**Gabryel Silva**
+
+Desenvolvimento e criação da plataforma Helios.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Byel1904-181717?style=for-the-badge&logo=github)](https://github.com/Byel1904)
 
@@ -71,8 +107,10 @@ Desenvolvido por **Gabryel Silva**, como parte de um projeto acadêmico no SENAC
 
 <div align="center">
 
-**HELIOS — Tecnologia e movimento em uma só experiência.**
+# HELIOS ☀️
 
-*Projeto desenvolvido para fins educacionais.*
+**Seu próximo nível começa aqui.**
+
+<sub>Projeto independente de uma academia fictícia, desenvolvido para fins demonstrativos e educacionais.</sub>
 
 </div>
