@@ -102,12 +102,13 @@ HeliosWeb_Academia/
 ## 👨‍💻 Desenvolvedor
 
 **Gabryel Silva**
+E
 **Henrrique Silva**
 
 Desenvolvimento e criação da plataforma Helios.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Byel1904-181717?style=for-the-badge&logo=github)](https://github.com/Byel1904)
-[![GitHub](https://img.shields.io/badge/GitHub-Byel1904-181717?style=for-the-badge&logo=github)](https://github.com/Henrrique498)
+[![GitHub](https://img.shields.io/badge/GitHub-Henrrique498-181717?style=for-the-badge&logo=github)](https://github.com/Henrrique498)
 
 
 ---
