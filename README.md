@@ -1,6 +1,6 @@
  <div align="center">
 
-<img src="https://raw.githubusercontent.com/Byel1904/HeliosWeb_Academia/main/img/logoHelios.png"
+<img src="https://raw.githubusercontent.com/Byel1904/HeliosWeb_Academia/main/img/LogoHelios.png"
          width="220"
          alt="Helios">
 
