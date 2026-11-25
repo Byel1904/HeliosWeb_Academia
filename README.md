@@ -72,7 +72,7 @@ Com uma identidade visual própria, a Helios busca unir design, praticidade e in
 ## 🛠️ Tecnologias
 
 | Tecnologia | Descrição |
-|---|---|
+|---|---| 
 | HTML5 | Estruturação das páginas |
 | CSS3 | Estilização e identidade visual |
 | JavaScript | Interatividade e funcionalidades |
