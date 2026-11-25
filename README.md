@@ -3,8 +3,10 @@
 <img src="https://raw.githubusercontent.com/Byel1904/HeliosWeb_Academia/main/img/LogoHelios.png"
          width="220"
          alt="Helios">
+<h1 alien="center">
+   H E L I O S
+</h1>
 
-# HELIOS
 
 ### FITNESS • PERFORMANCE • EVOLUTION
 
