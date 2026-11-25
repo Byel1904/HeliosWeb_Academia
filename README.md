@@ -101,7 +101,7 @@ HeliosWeb_Academia/
 
 ## 👨‍💻 Desenvolvedor
 
-**Gabryel Silva**
+**Gabryel Silva** 
 E
 **Henrique Silva**
 
