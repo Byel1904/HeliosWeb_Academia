@@ -22,7 +22,7 @@ document
   .getElementById('closeRegister')
   .addEventListener('click', closeRegister);
 
-registerModal.addEventListener('click', (e) => {
+registerModal.addEventListener('click', (e) => {""
   if (e.target === registerModal) closeRegister();
 });
 
@@ -30,7 +30,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeRegister();
 });
 
-registerForm.addEventListener('submit', (e) => {
+registerForm.addEventListener('submit', (e) => {""
   e.preventDefault();
 
   const nome = document.getElementById('regNome').value.trim();
@@ -67,4 +67,17 @@ registerForm.addEventListener('submit', (e) => {
   localStorage.setItem('helios_session', email);
 
   window.location.href = 'home.html';
+});
+
+document.querySelectorAll('.toggle-card-eye').forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const input = btn.parentElement.querySelector('input');
+    const icon = btn.querySelector('i');
+    const isHidden = input.type === 'password';
+
+    input.type = isHidden ? 'text' : 'password';
+    icon.classList.toggle('fa-eye-slash', !isHidden);
+    icon.classList.toggle('fa-eye', isHidden);
+  });
 });

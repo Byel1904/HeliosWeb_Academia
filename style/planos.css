@@ -1,329 +1,309 @@
-
 :root {
-    --amber: #ffb400;
-    --orange: #f5a623;
-    --card: #0e1c2b;
-    --white: #ffffff;
-    --font-title: "Oswald", sans-serif;
-    --font-text: "Marcellus", serif;
+  --amber: #ffb400;
+  --orange: #f5a623;
+  --card: #0e1c2b;
+  --white: #ffffff;
+  --font-title: "Oswald", sans-serif;
+  --font-text: "Marcellus", serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
-    background: #091321;
-    color: var(--white);
-    font-family: var(--font-text);
-    overflow-x: hidden;
+  min-height: 100vh;
+  background: #091321;
+  color: var(--white);
+  font-family: var(--font-text);
+  overflow-x: hidden;
 }
 
 /* FUNDO */
 
 .background {
-    position: fixed;
-    inset: 0;
-    z-index: -2;
+  position: fixed;
+  inset: 0;
+  z-index: -2;
 }
 
 .background video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px);
 }
 
 .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(5, 16, 29, 0.88);
-    z-index: 1;
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 16, 29, 0.88);
+  z-index: 1;
 }
 
 /* CABEÇALHO */
 
 .header {
-    width: 100%;
-    height: 76px;
-    padding: 0 5.5%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: 76px;
+  padding: 0 5.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    color: var(--white);
-    text-decoration: none;
-    font-family: var(--font-text);
-    font-size: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--font-text);
+  font-size: 30px;
 }
 
 .logo img {
-    width: 48px;
-    height: auto;
+  width: 48px;
+  height: auto;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
-
-    background: var(--white);
-    border-radius: 50px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border-radius: 50px;
+  overflow: hidden;
 }
 
 .navigation a {
-    padding: 10px 25px;
-    text-decoration: none;
-    color: #111;
-    font-size: 14px;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
 }
 
 .login {
-    background: var(--white);
+  background: var(--white);
 }
 
 .register {
-    background: var(--amber);
-    border-radius: 50px;
-    margin-left: -12px;
-    z-index: 1;
+  background: var(--amber);
+  border-radius: 50px;
+  margin-left: -12px;
+  z-index: 1;
 }
 
 /* ÁREA DOS PLANOS */
 
 .plans-container {
-    min-height: calc(100vh - 76px);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 28px 4% 50px;
+  min-height: calc(100vh - 76px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px 4% 50px;
 }
 
 .plans {
-    width: 100%;
-    max-width: 1200px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 /* CARTÕES */
 
 .plan-card {
-    min-height: 354px;
-    padding: 18px 22px 22px;
-
-    display: flex;
-    flex-direction: column;
-
-    background: rgba(14, 28, 43, 0.94);
-    border: 1px solid rgba(255, 255, 255, 0.09);
-    border-radius: 8px;
+  min-height: 354px;
+  padding: 18px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(14, 28, 43, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
 }
 
 /* TÍTULOS */
 
 .plan-card h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-
-    margin-bottom: 15px;
-
-    font-family: var(--font-title);
-    font-size: 29px;
-    font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+  font-family: var(--font-title);
+  font-size: 29px;
+  font-weight: 400;
 }
 
 .plan-card h2 strong {
-    font-weight: 700;
-    color: white;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .plan-card h2 span {
-    color: var(--amber);
-    font-weight: 400;
-
+  color: var(--amber);
+  font-weight: 400;
 }
 
 .plan-black {
-    background: var(--amber);
-    border-color: var(--amber);
-    color: #080808;
+  background: var(--amber);
+  border-color: var(--amber);
+  color: #080808;
 }
 
 .plan-black h2 span {
-    color: #080808;
+  color: #080808;
 }
 
 /* BENEFÍCIOS */
 
 .benefits {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
 }
 
 .benefits li {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-
-    font-size: 10px;
-    line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10px;
+  line-height: 1.4;
 }
 
 .benefits i {
-    width: 17px;
-    min-width: 17px;
-    font-size: 17px;
-    text-align: center;
+  width: 17px;
+  min-width: 17px;
+  font-size: 17px;
+  text-align: center;
 }
 
 .plan-black .benefits i {
-    color: #080808;
+  color: #080808;
 }
 
 /* PREÇO E BOTÃO */
 
 .plan-bottom {
-    margin-top: auto;
-    padding-top: 30px;
+  margin-top: auto;
+  padding-top: 30px;
 }
 
 .price {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 8px;
-
-    margin-bottom: 26px;
-    font-size: 13px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 26px;
+  font-size: 13px;
 }
 
 .price strong {
-    font-family: Arial, sans-serif;
-    font-size: 23px;
-    font-weight: 600;
+  font-family: Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
 }
 
 .choose-plan {
-    width: 100%;
-    min-height: 36px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: var(--amber);
-    border-radius: 50px;
-
-    color: #080808;
-    text-decoration: none;
-    font-family: var(--font-text);
-    font-size: 10px;
-
-    transition: 0.2s ease;
+  width: 100%;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--amber);
+  border-radius: 50px;
+  color: #080808;
+  text-decoration: none;
+  font-family: var(--font-text);
+  font-size: 10px;
+  transition: 0.2s ease;
 }
 
 .choose-plan:hover {
-    filter: brightness(1.1);
-    transform: translateY(-2px);
+  filter: brightness(1.1);
+  transform: translateY(-2px);
 }
 
 /* BOTÃO DO BLACK */
 
 .plan-black .choose-plan {
-    background: #111a29;
-    color: var(--white);
+  background: #111a29;
+  color: var(--white);
 }
 
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE DOS PLANOS */
 
 @media (max-width: 900px) {
+  .plans {
+    gap: 15px;
+  }
 
-    .plans {
-        gap: 15px;
-    }
+  .plan-card {
+    padding: 18px 14px 20px;
+  }
 
-    .plan-card {
-        padding: 18px 14px 20px;
-    }
+  .plan-card h2 {
+    font-size: 24px;
+  }
 
-    .plan-card h2 {
-        font-size: 24px;
-    }
+  .benefits li {
+    font-size: 9px;
+  }
 
-    .benefits li {
-        font-size: 9px;
-    }
-
-    .price strong {
-        font-size: 19px;
-    }
+  .price strong {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 650px) {
+  .header {
+    padding: 0 20px;
+  }
 
-    .header {
-        padding: 0 20px;
-    }
+  .logo {
+    font-size: 25px;
+  }
 
-    .logo {
-        font-size: 25px;
-    }
+  .logo img {
+    width: 40px;
+  }
 
-    .logo img {
-        width: 40px;
-    }
+  .navigation a {
+    padding: 9px 16px;
+    font-size: 12px;
+  }
 
-    .navigation a {
-        padding: 9px 16px;
-        font-size: 12px;
-    }
+  .plans-container {
+    padding: 25px 20px 40px;
+  }
 
-    .plans-container {
-        padding: 25px 20px 40px;
-    }
+  .plans {
+    max-width: 380px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-    .plans {
-        max-width: 380px;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+  .plan-card {
+    min-height: 350px;
+    padding: 22px;
+  }
 
-    .plan-card {
-        min-height: 350px;
-        padding: 22px;
-    }
+  .plan-card h2 {
+    font-size: 29px;
+  }
 
-    .plan-card h2 {
-        font-size: 29px;
-    }
+  .benefits li {
+    font-size: 11px;
+  }
 
-    .benefits li {
-        font-size: 11px;
-    }
-
-    .price strong {
-        font-size: 23px;
-    }
+  .price strong {
+    font-size: 23px;
+  }
 }
-
 
 /* POPUP DE PAGAMENTO */
 
@@ -334,8 +314,8 @@ body {
   width: 100%;
   height: 100vh;
   z-index: 1000;
-  grid-template-columns: 68% 32%;
-  background: #dedede;
+  grid-template-columns: 65% 35%;
+  background: #f4f5f7;
   color: #111;
   overflow-y: auto;
   font-family: Arial, sans-serif;
@@ -347,15 +327,16 @@ body {
 
 .checkout-left {
   position: relative;
-  padding: 20px 5%;
+  padding: 28px 6% 50px;
 }
 
 .checkout-close {
   position: absolute;
-  top: 20px;
-  left: 22px;
+  top: 22px;
+  left: 24px;
   color: #333;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .checkout-logo {
@@ -363,38 +344,40 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   color: #111;
   text-decoration: none;
   font-family: "Marcellus", serif;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .checkout-logo img {
-  width: 40px;
+  width: 42px;
 }
 
 .checkout-form {
-  max-width: 760px;
-  margin: auto;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .checkout-form h3 {
-  font-size: 13px;
-  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
 }
 
 .address-fields,
 .card-fields {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 14px;
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   min-width: 0;
 }
 
@@ -403,138 +386,346 @@ body {
 }
 
 .field label {
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #222;
 }
 
-.field input {
+.field input,
+.field select {
   width: 100%;
-  height: 34px;
-  padding: 8px;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  background: transparent;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #c6cbd2;
+  border-radius: 6px;
+  background: #ffffff;
   color: #111;
+  font-size: 12px;
+}
+
+.field input::placeholder {
+  color: #9aa0a6;
 }
 
 .payment-title {
-  margin-top: 25px;
+  margin-top: 28px;
 }
 
 .security {
-  font-size: 9px;
-  color: #555;
-  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-bottom: 14px;
 }
 
 .payment-options {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .payment-option {
+  display: block;
+  padding: 16px 18px;
+  background: #ffffff;
+  border: 1px solid #d5d9df;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.payment-option:has(input[type="radio"]:checked) {
+  border-color: #ffb400;
+}
+
+.payment-content {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.payment-header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 12px;
-  background: white;
-  border: 1px solid #ccc;
+  gap: 12px;
+  width: 100%;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.payment-info strong {
+  font-size: 14px;
+  color: #111;
+}
+
+.payment-header input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #ffb400;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 28px;
+  padding: 3px 5px;
+  background: #ffffff;
+  border: 1px solid #e6e8ec;
   border-radius: 5px;
-  font-size: 11px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.brand-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-item i {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.brand-item .fa-cc-visa {
+  color: #1a1f71;
+}
+
+.brand-item .fa-cc-mastercard {
+  color: #eb001b;
+}
+
+/* Fecha por padrão e abre somente quando selecionado */
+.payment-option .card-fields {
+  display: none;
+  padding-top: 16px;
+  margin-top: 14px;
+  border-top: 1px solid #eceef2;
+}
+
+.payment-option:has(input[type="radio"]:checked) .card-fields {
+  display: grid;
+}
+
+.smart-fields {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.fields-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #111;
+  margin-top: 4px;
+}
+
+.fields-section-title.full {
+  grid-column: 1 / -1;
+}
+
+.debit-top-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.input-icon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon-wrap input {
+  width: 100%;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.input-icon-left {
+  position: absolute;
+  left: 11px;
+  color: #9aa0a6;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.toggle-card-eye {
+  position: absolute;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #555;
+  font-size: 14px;
   cursor: pointer;
 }
 
-.payment-option > span {
+.finish-payment {
+  width: 100%;
+  height: 44px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 999px;
+  background: #ffb400;
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.finish-payment:hover {
+  filter: brightness(1.05);
+}
+
+/* COLUNA DIREITA — DETALHES DA COMPRA */
+
+.checkout-right {
+  padding: 32px 28px 50px;
+  background: #fafafa;
+  border-left: 1px solid #e3e6ea;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checkout-right h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+}
+
+.address-summary {
+  padding: 14px 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.address-summary strong {
+  display: block;
+  font-size: 13px;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.address-summary small {
+  display: block;
+  font-size: 11px;
+  color: #555;
+}
+
+.plan-badge-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.brands {
-  display: flex;
-  gap: 10px;
-  font-size: 16px;
-  color: #2457ad;
-}
-
-.card-fields {
-  padding: 12px;
-  background: white;
-  border-radius: 5px;
-}
-
-.card-fields input {
-  background: #f2f2f2;
-}
-
-.finish-payment {
-  width: 100%;
-  height: 38px;
-  margin-top: 15px;
-  border: none;
-  border-radius: 30px;
-  background: #ffb800;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.checkout-right {
-  padding: 35px 20px;
-  background: #b3b3b3;
-  border-radius: 12px 0 0 12px;
-}
-
-.checkout-right h3 {
-  font-size: 13px;
-  margin-bottom: 15px;
-}
-
-.address-summary,
-.purchase-summary {
-  padding: 12px;
-  margin-bottom: 8px;
-  background: white;
-  border-radius: 6px;
-}
-
-.address-summary strong,
-.address-summary small {
-  display: block;
-  font-size: 10px;
-  margin-bottom: 5px;
-}
-
 .selected-plan {
-  padding: 12px;
-  margin-bottom: 12px;
-  background: #111;
-  color: white;
-  border-radius: 4px;
+  padding: 12px 16px;
+  background: #14171f;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.plan-perk-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #eef7f1;
+  border-radius: 8px;
   font-size: 11px;
+  color: #1f5133;
+  line-height: 1.4;
+}
+
+.installments-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .summary-line {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  padding: 12px 0;
-  border-bottom: 1px solid #ddd;
-  font-size: 9px;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid #eceef2;
+  font-size: 12px;
 }
 
-@media (max-width: 650px) {
+.summary-line strong {
+  display: block;
+  font-size: 12px;
+  color: #111;
+}
+
+.summary-line small {
+  display: block;
+  font-size: 10px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.summary-line > span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+}
+
+.summary-line.total-line {
+  margin-top: 4px;
+  border-bottom: 1px solid #cfd4dc;
+}
+
+.checkout-disclaimer {
+  font-size: 10px;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
   .checkout {
     grid-template-columns: 1fr;
   }
 
   .checkout-right {
-    border-radius: 12px 12px 0 0;
+    border-left: none;
+    border-top: 1px solid #e3e6ea;
   }
 
-  .checkout-left {
-    padding: 20px;
+  .debit-top-row,
+  .smart-fields,
+  .address-fields {
+    grid-template-columns: 1fr;
   }
 }
+
+/* MODAL DE CADASTRO */
 
 .register-overlay {
   position: fixed;
